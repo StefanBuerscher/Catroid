@@ -77,7 +77,7 @@ public final class SensorHandler implements SensorEventListener, SensorCustomEve
 		instance.sensorManager.registerListener(instance, Sensors.LOUDNESS);
 		FaceDetectionHandler.registerOnFaceDetectedListener(instance);
 		FaceDetectionHandler.registerOnFaceDetectionStatusListener(instance);
-		//TODO: albert Tobi fragen was sharedPref. macht
+
 		SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
 		SensorRobotAlbert sensor = SensorRobotAlbert.getSensorRobotAlbertInstance();
 		if ((sharedPreferences.getBoolean(SensorRobotAlbert.KEY_SETTINGS_ROBOT_ALBERT_BRICKS, false))) {

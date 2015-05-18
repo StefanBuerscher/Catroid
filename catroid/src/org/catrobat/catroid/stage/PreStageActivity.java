@@ -279,7 +279,6 @@ public class PreStageActivity extends BaseActivity {
 		if (legoNXT != null) {
 			legoNXT.pauseCommunicator();
 		}
-//		ServiceProvider.getService(CatroidService.BLUETOOTH_DEVICE_SERVICE).pause();
 		if (FaceDetectionHandler.isFaceDetectionRunning()) {
 			FaceDetectionHandler.stopFaceDetection();
 		}

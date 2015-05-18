@@ -75,7 +75,7 @@ public class SetVariableBrick extends UserVariableBrick {
 		this.userVariable = null;
 		initializeBrickFields(new Formula(value));
 	}
-	//TODO: albert
+
 	public SetVariableBrick( String value) {
 		this.isStringInPrototype = true;
 		this.stringInPrototype = value;
@@ -214,7 +214,7 @@ public class SetVariableBrick extends UserVariableBrick {
 
 		TextView textSetVariable = (TextView) prototypeView.findViewById(R.id.brick_set_variable_prototype_view);
 		textSetVariable.setText(String.valueOf(BrickValues.SET_VARIABLE));
-		//TODO: albert
+
 		if (isStringInPrototype == false) {
 				textSetVariable.setText(String.valueOf(BrickValues.SET_VARIABLE));
 		} else {

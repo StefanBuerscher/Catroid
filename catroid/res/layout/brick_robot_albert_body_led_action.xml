@@ -49,16 +49,14 @@
             <TextView
                 android:id="@+id/robot_albert_body_led_label"
                 style="@style/BrickText.SingleLine"
-                android:text="@string/brick_robot_albert_body_led_action" >
-            </TextView>
+                android:text="@string/brick_robot_albert_body_led_action" />
 
             
             <TextView
                 android:id="@+id/robot_albert_body_led_status_text_view"
                 style="@style/BrickText"
                 app:layout_newLine="true"
-                android:text="@string/robot_albert_body_led_status" >
-            </TextView>
+                android:text="@string/robot_albert_body_led_status" />
             
             <TextView
                 android:id="@+id/robot_albert_body_led_status_prototype_text_view"
@@ -69,16 +67,14 @@
                 android:id="@+id/robot_albert_body_led_status_edit_text"
                 style="@style/BrickEditText"
                 app:layout_inputType="number"
-                app:layout_textField="true" >
-            </TextView>
+                app:layout_textField="true" />
             
 
             <TextView
                 style="@style/BrickText"
                 android:layout_centerVertical="true"
                 android:paddingRight="10dip"
-                android:text="@string/robot_albert_body_led_status_info" >
-            </TextView>
+                android:text="@string/robot_albert_body_led_status_info" />
         
     </org.catrobat.catroid.ui.BrickLayout>
 

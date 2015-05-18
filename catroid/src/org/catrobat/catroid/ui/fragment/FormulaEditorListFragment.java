@@ -145,7 +145,6 @@ public class FormulaEditorListFragment extends SherlockListFragment implements D
 		} else if (tag.equals(LOGIC_TAG)) {
 			itemsIds = LOGIC_ITEMS;
 		} else if (tag.equals(SENSOR_TAG)) {
-			//TODO ALbert:
 			SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
 			if ((sharedPreferences.getBoolean(SensorRobotAlbert.KEY_SETTINGS_ROBOT_ALBERT_BRICKS, false))) {
 				itemsIds = SENSOR_ITEMS_WITH_ALBERT;

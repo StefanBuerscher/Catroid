@@ -111,13 +111,8 @@ public class RobotAlbertRgbLedEyeActionBrickTest extends BaseActivityInstrumenta
 		String[] eyes = getActivity().getResources().getStringArray(R.array.robot_albert_eye_chooser);
 		assertTrue("Spinner items list too short!", eyes.length == 3);
 
-		int spinnerIndex = 1;
 
-		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1) {
-			spinnerIndex = 0;
-		}
-		//TODO: seams that the if above isn't true......
-		spinnerIndex = 0;
+		int spinnerIndex = 0;
 		Log.d("RobotAlbert-Test", "2: spinnerIndex=" + spinnerIndex);
 
 		Spinner currentSpinner = solo.getCurrentViews(Spinner.class).get(spinnerIndex);

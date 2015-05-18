@@ -84,7 +84,6 @@ public class RobotAlbertBuzzerBrickTest extends BaseActivityInstrumentationTestC
 		UiTestUtils.testBrickWithFormulaEditor(solo, ProjectManager.getInstance().getCurrentSprite(), R.id.robot_albert_buzzer_frequency_edit_text, SET_FREQ,
 				Brick.BrickField.ROBOT_ALBERT_BUZZER, brick);
 
-		//TODO: Prints an error after setting it from init to new value, but I can see that it was set. Executing the command a second time seams to solve that. Why not the first time??
 		UiTestUtils.testBrickWithFormulaEditor(solo, ProjectManager.getInstance().getCurrentSprite(),
 				R.id.robot_albert_buzzer_frequency_edit_text, SET_FREQ, Brick.BrickField.ROBOT_ALBERT_BUZZER, brick);
 

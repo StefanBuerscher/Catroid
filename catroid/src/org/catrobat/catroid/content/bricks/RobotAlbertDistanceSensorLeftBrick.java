@@ -103,66 +103,6 @@ public class RobotAlbertDistanceSensorLeftBrick extends FormulaBrick implements 
 			}
 		});
 
-//		UserBrick currentBrick = ProjectManager.getInstance().getCurrentUserBrick();
-//		int userBrickId = (currentBrick == null ? -1 : currentBrick.getUserBrickId());
-
-//		UserVariableAdapter userVariableAdapter = ProjectManager.getInstance().getCurrentProject().getUserVariables()
-//				.createUserVariableAdapter(context, userBrickId, ProjectManager.getInstance().getCurrentSprite(), inUserBrick);
-//
-//		final Spinner variableSpinner = (Spinner) view.findViewById(R.id.robot_albert_distance_sensor_left_spinner);
-//		UserVariableAdapterWrapper userVariableAdapterWrapper = new UserVariableAdapterWrapper(context,
-//				userVariableAdapter);
-//		userVariableAdapterWrapper.setItemLayout(android.R.layout.simple_spinner_item, android.R.id.text1);
-//
-//		variableSpinner.setAdapter(userVariableAdapterWrapper);
-//
-//		if (!(checkbox.getVisibility() == View.VISIBLE)) {
-//			variableSpinner.setClickable(true);
-//			variableSpinner.setEnabled(true);
-//		} else {
-//			variableSpinner.setClickable(false);
-//			variableSpinner.setFocusable(false);
-//		}
-//
-//		setSpinnerSelection(variableSpinner, null);
-//
-//		variableSpinner.setOnTouchListener(new OnTouchListener() {
-//
-//			@Override
-//			public boolean onTouch(View v, MotionEvent event) {
-//				if (event.getAction() == MotionEvent.ACTION_UP && ((Spinner) v).getSelectedItemPosition() == 0 &&
-//						((Spinner) v).getAdapter().getCount() == 1) {
-//					NewVariableDialog dialog = new NewVariableDialog((Spinner) v);
-//					dialog.addVariableDialogListener(RobotAlbertDistanceSensorLeftBrick.this);
-//					dialog.show(((SherlockFragmentActivity) view.getContext()).getSupportFragmentManager(),
-//							NewVariableDialog.DIALOG_FRAGMENT_TAG);
-//					return true;
-//				}
-//				return false;
-//			}
-//		});
-//		variableSpinner.setOnItemSelectedListener(new OnItemSelectedListener() {
-//			@Override
-//			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//				if (position == 0 && ((UserVariableAdapterWrapper) parent.getAdapter()).isTouchInDropDownView()) {
-////					NewVariableDialog dialog = new NewVariableDialog((Spinner) parent);
-//					NewDataDialog dialog = new NewDataDialog((Spinner) parent, NewDataDialog.DialogType.USER_LIST);
-//					dialog.addVariableDialogListener(dialog););
-//					dialog.addVariableDialogListener(RobotAlbertDistanceSensorLeftBrick.this);
-//					dialog.show(((SherlockFragmentActivity) view.getContext()).getSupportFragmentManager(),
-//							NewVariableDialog.DIALOG_FRAGMENT_TAG);
-//				}
-//				((UserVariableAdapterWrapper) parent.getAdapter()).resetIsTouchInDropDownView();
-//				userVariable = (UserVariable) parent.getItemAtPosition(position);
-//				adapterView = parent;
-//			}
-//
-//			@Override
-//			public void onNothingSelected(AdapterView<?> arg0) {
-//				userVariable = null;
-//			}
-//		});
-
 		return view;
 	}
 

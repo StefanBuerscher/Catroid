@@ -34,7 +34,7 @@ import java.util.List;
 
 public final class SensorRobotAlbert {
 
-	//TODO: albert include albert sensor in formula editor
+
 	public static final String KEY_SETTINGS_ROBOT_ALBERT_BRICKS = "setting_robot_albert_bricks";
 
 	private static final int UPDATE_INTERVAL = 50; //New sensor data comes around every 40ms

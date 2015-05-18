@@ -340,7 +340,7 @@ public class CategoryBricksFactory {
 				BrickValues.ROBOT_ALBERT_RGB_LED_EYE_BLUE));
 		robotAlbertBrickList.add(new RobotAlbertFrontLedBrick( BrickValues.ROBOT_ALBERT_FRONT_LED));
 		robotAlbertBrickList.add(new RobotAlbertBodyLedBrick( BrickValues.ROBOT_ALBERT_BODY_LED));
-		//TODO: albert
+
 		robotAlbertBrickList.add(new SetVariableBrick( Sensors.ALBERT_ROBOT_DISTANCE_LEFT.toString()));
 		robotAlbertBrickList.add(new SetVariableBrick( Sensors.ALBERT_ROBOT_DISTANCE_RIGHT.toString()));
 

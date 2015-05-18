@@ -452,7 +452,7 @@ public class BrickValueParameterTest extends BaseActivityInstrumentationTestCase
 
 	public void testRobotAlbertBricksDefaultValues() {
 
-		//TODO: Check if Spinner-Value is correct
+
 
 		String categoryRobotAlbertText = solo.getString(R.string.category_robot_albert);
 
