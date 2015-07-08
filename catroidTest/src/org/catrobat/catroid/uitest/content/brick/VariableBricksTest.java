@@ -92,7 +92,15 @@ public class VariableBricksTest extends BaseActivityInstrumentationTestCase<Main
 
 		assertEquals("Variable has the wrong value after stage", 42.0,
 				dataContainer.getUserVariable("p2", sprite).getValue());
+	}
 
+	public void testCreatingNewVariableCancelling(){
+		solo.clickOnText("p2");
+		solo.clickOnText("p1");
+		solo.clickOnText("p1");
+		solo.clickOnText(solo.getString(R.string.brick_variable_spinner_create_new_variable));
+		solo.clickOnText(solo.getString(R.string.cancel_button));
+		solo.clickOnText("p1");
 	}
 
 	private void createProject() {
