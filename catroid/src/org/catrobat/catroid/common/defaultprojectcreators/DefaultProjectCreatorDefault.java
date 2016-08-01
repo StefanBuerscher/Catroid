@@ -149,9 +149,13 @@ public class DefaultProjectCreatorDefault extends DefaultProjectCreator {
 			birdWingDownLookData.setLookName(birdWingDownLookName);
 			birdWingDownLookData.setLookFilename(birdWingDownFile.getName());
 
-			LookData cloudLookData = new LookData();
-			cloudLookData.setLookName(cloudName);
-			cloudLookData.setLookFilename(cloudFile.getName());
+			LookData cloudLookData1 = new LookData();
+			cloudLookData1.setLookName(cloudName);
+			cloudLookData1.setLookFilename(cloudFile.getName());
+
+			LookData cloudLookData2 = new LookData();
+			cloudLookData2.setLookName(cloudName);
+			cloudLookData2.setLookFilename(cloudFile.getName());
 
 			SoundInfo soundInfo1 = new SoundInfo();
 			soundInfo1.setTitle(tweet1);
@@ -166,8 +170,8 @@ public class DefaultProjectCreatorDefault extends DefaultProjectCreator {
 
 			Sprite cloudSprite1 = new Sprite(cloudSpriteName1);
 			Sprite cloudSprite2 = new Sprite(cloudSpriteName2);
-			cloudSprite1.getLookDataList().add(cloudLookData);
-			cloudSprite2.getLookDataList().add(cloudLookData);
+			cloudSprite1.getLookDataList().add(cloudLookData1);
+			cloudSprite2.getLookDataList().add(cloudLookData2);
 
 			Script cloudSpriteScript1 = new StartScript();
 			Script cloudSpriteScript2 = new StartScript();
@@ -249,7 +253,7 @@ public class DefaultProjectCreatorDefault extends DefaultProjectCreator {
 
 			ProjectManager.getInstance().getFileChecksumContainer().addChecksum(birdWingUpLookData.getChecksum(), birdWingUpLookData.getAbsolutePath());
 			ProjectManager.getInstance().getFileChecksumContainer().addChecksum(birdWingDownLookData.getChecksum(), birdWingDownLookData.getAbsolutePath());
-			ProjectManager.getInstance().getFileChecksumContainer().addChecksum(cloudLookData.getChecksum(), cloudLookData.getAbsolutePath());
+			ProjectManager.getInstance().getFileChecksumContainer().addChecksum(cloudLookData1.getChecksum(), cloudLookData1.getAbsolutePath());
 
 			StorageHandler.getInstance().fillChecksumContainer();
 		} catch (IllegalArgumentException illegalArgumentException) {
